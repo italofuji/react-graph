@@ -1,4 +1,9 @@
 module.exports = {
+  settings: {
+    react: {
+      version: '18'
+    }
+  },
   env: {
     browser: true,
     es2021: true
@@ -7,6 +12,7 @@ module.exports = {
     'plugin:react/recommended',
     'standard-with-typescript'
   ],
+  ignorePatterns: ['*.d.ts'],
   overrides: [
   ],
   parserOptions: {
