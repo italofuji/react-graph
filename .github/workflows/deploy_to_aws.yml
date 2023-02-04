@@ -44,6 +44,6 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_ACCESS_KEY_SECRET }}
           aws-region: us-east-1
-      - run: aws s3 sync dist s3://${{ env.AWS_BUCKET_NAME }}
-      - run: aws cloudfront create-invalidation --distribution ${{ env.AWS_CLOUDFRONT_DIST_ID }} --paths="/*"
+      - run: aws s3 sync dist s3://$AWS_BUCKET_NAME
+      - run: aws cloudfront create-invalidation --distribution $AWS_CLOUDFRONT_DIST_ID --paths="/*"
         
