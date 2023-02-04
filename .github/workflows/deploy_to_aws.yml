@@ -37,7 +37,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: built-app
-          path: ~/dist
-      - run: ls dist
-        working-directory: ~/dist
+          path: dist
+      - run: ls
+        working-directory: dist
         
