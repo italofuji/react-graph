@@ -39,4 +39,5 @@ jobs:
           name: built-app
           path: ~/dist
       - run: ls dist
+        working-directory: ~/dist
         
